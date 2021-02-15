@@ -1,11 +1,13 @@
 import React from 'react'; 
+import TwitterLogo from '../../assets/img/twitter-logo.png';
+
+import './Header.scss'
 
 const Header = () => {
     return (
-        <div>
-            <h2>
-                Soy el header
-            </h2>
+        <div className='header'>
+            <img src={TwitterLogo} alt='Tweets Simulator' />
+            <h1>Tweets Simulator</h1>
         </div>
     )
 };
