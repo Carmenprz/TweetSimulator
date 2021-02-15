@@ -1,12 +1,15 @@
 import React from 'react';
 import './App.scss';
-import Header from './components/Header/Header';
+import { Container } from '@material-ui/core/'
+import { Header } from './components/Header/Header'
+import { SendTweet } from './components/SendTweet/SendTweet'
 
 function App() {
   return (
-    <div className="App">
+    <Container className="tweets-simulator" maxWidth={false}>
       <Header />
-    </div>
+      <SendTweet />
+    </Container>
   );
 }
 

@@ -1,0 +1,10 @@
+.send-tweet {
+    &__open-modal {
+        position: relative;
+        left: 400px;
+        background-color: #00acee;
+        z-index: 1;
+        bottom: -150px;
+    }
+
+}
