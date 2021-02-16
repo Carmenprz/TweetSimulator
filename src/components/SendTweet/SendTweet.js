@@ -1,6 +1,7 @@
 import React, { useState } from 'react' 
 import { Fab } from '@material-ui/core' 
 import AddIcon from '@material-ui/icons/Add'
+import { FormSendTweet } from '../FormSendTweet/FormSendTweet'
 import { ModalContainer } from '../ModalContainer/ModalContainer'
 
 import './SendTweet.scss' 
@@ -28,7 +29,7 @@ export const SendTweet = () => {
                 <AddIcon />
             </Fab>
             <ModalContainer isOpenModal={isOpenModal} closeModal={closeModal}>
-                <p>mi modal</p>
+                <FormSendTweet />
             </ModalContainer>
         </div>
     )
