@@ -4,7 +4,7 @@ import { Container, Snackbar } from '@material-ui/core/'
 import { Header } from './components/Header/Header'
 import { SendTweet } from './components/SendTweet/SendTweet'
 import { TWEETS_STORAGE } from './utils/constants';
-
+import { ListTweets } from './components/ListTweets/ListTweets'
 function App() {
 
   const [ toastProps, setToastProps ] = useState({
@@ -20,13 +20,13 @@ function App() {
     setAllTweets(allTweetsArray);
   }, []);
 
-  console.log(allTweets);
+  // console.log(allTweets);
 
   return (
     <Container className="tweets-simulator" maxWidth={false}>
       <Header />
       <SendTweet setToastProps={setToastProps} allTweets={allTweets}/>
-      
+      <ListTweets allTweets={allTweets}/>
       <Snackbar 
         anchorOrigin={{
           vertical:"top",
