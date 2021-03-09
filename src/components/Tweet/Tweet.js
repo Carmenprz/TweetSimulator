@@ -8,7 +8,8 @@ import './Tweet.scss';
 export const Tweet = (props) => {
     const { 
         tweet: { name, tweet, time}, 
-        index
+        index, 
+        deleteTweets
     } = props;
 
     // console.log(props)
@@ -17,7 +18,7 @@ export const Tweet = (props) => {
             <CardContent>
                 <div className='tweet__header'>
                     <h5>{name}</h5>
-                    <DeleteIcon onClick={() => console.log('tweet eliminado')} />
+                    <DeleteIcon onClick={() => deleteTweets(index)} />
                 </div>
                 <p>{tweet.name}</p>
                 <div className='tweet__data'>

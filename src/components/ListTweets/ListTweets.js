@@ -7,7 +7,7 @@ import './ListTweets.scss'
 
 export const  ListTweets = (props) => {
     
-    const { allTweets } = props;
+    const { allTweets, deleteTweets } = props;
 
 
     if ( !allTweets || allTweets.lenght === 0) {
@@ -27,6 +27,7 @@ export const  ListTweets = (props) => {
                         <Tweet 
                             tweet={tweet}
                             index={index}
+                            deleteTweets={deleteTweets}
                         />
                     </Grid>
                 ))}
